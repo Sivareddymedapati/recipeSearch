@@ -1,0 +1,158 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+.container{
+	background-color: white;
+	height:230px;
+	z-index: 1;
+	border:solid;
+	border-width: thin;
+	border-color: grey;
+}
+
+.mainImage{
+	border-radius: 100px;
+	height:150px;
+	width:200px;
+}
+
+.mainTitleImage{
+	border-radius: 100px;
+	height:100px;
+	width:150px;
+	cursor: pointer;
+}
+
+.searchBtn{
+   
+	background-color: green;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	height:40px;
+	width:40px;
+	cursor: pointer;
+  }
+
+  .findBtn{
+	background-color: green;
+	height:40px;
+	width:90px;
+	color:white;
+	cursor: pointer;
+  }
+
+  .fa-search{
+	color: white;
+	background-color: green;
+	width:20px;
+	height:20px; 
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px; 
+  }
+  
+  .form{
+    width:600px;
+	height:50px;
+	color:black
+  }
+
+  .refine{
+	  font-size: 13px;
+	  color:black;
+	  
+  }
+
+  .forminput{
+    width:600px;
+	height:40px;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	outline: none;
+  }
+  .fa-angle-down{
+	  color:white;
+	  width:20px;
+	  height:30px;
+  }
+  .fa-check-circle{
+	  color: white;
+	  padding-right: 5px;
+	  
+  }
+
+  .rSearch{
+	  cursor: pointer;
+  }
+  .active{
+	  display: block;
+  }
+
+  .inactive{
+	  display: none;
+  }
+
+  .filterBox{
+	  background-color:white;
+	  border-style: solid;
+	  border:solid;
+	  border-width: thin;
+	  border-color: grey;
+	  height:310px;
+	  z-index: 1;
+	  
+  }
+
+  [class*="grid-"] {
+	float: left;
+	padding: 5px;
+	position: relative;
+	 }
+
+.grid-12 {
+	width: 100%
+}
+
+.grid-11 {
+	width: 91.66666667%
+}
+
+.grid-10 {
+	width: 83.33333333%
+}
+
+.grid-9 {
+	width: 75%
+}
+
+.grid-8 {
+	width: 66.66666667%
+}
+
+.grid-7 {
+	width: 58.33333333%
+}
+
+.grid-6 {
+	width: 50%
+}
+
+.grid-5 {
+	width: 41.66666667%
+}
+
+.grid-4 {
+	width: 33.33333333%
+}
+
+.grid-3 {
+	width: 25%
+}
+
+.grid-2 {
+	width: 16.66666667%
+}
+.grid-1 {
+	width: 8.33333333%
+}
