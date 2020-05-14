@@ -174,11 +174,16 @@ fetchData = async() => {
       display:false
     })
   } 
+
+  componentDidMount(){
+    this.fetchNewapiData()
+  }
   render() { 
+    
     return (
       <div>
         <SearchForm displayChange={this.displayChange} fetchapiData={this.fetchapiData} filters={this.state.filters} handleInputPeanut={this.handleInputPeanut} handleInputNut={this.handleInputNut} handleInputAlcohol={this.handleInputAlcohol} handleInputSugar={this.handleInputSugar} handleInputVegan={this.handleInputVegan} handleInputVeg={this.handleInputVeg} handleInputLcarb={this.handleInputLcarb} handleInputLFat={this.handleInputLFat} handleInputBalanced={this.handleInputBalanced}  handleInputHP={this.handleInputHP} item={this.state.itemSearch} handleInputChange={this.handleInputChange}/>
-        <CheckData fetchNewapiData={this.fetchNewapiData} newData={this.state.newData} display={this.state.display} data={this.state.data} findRecipe={this.findRecipe}/>
+        <CheckData newData={this.state.newData} display={this.state.display} data={this.state.data} findRecipe={this.findRecipe}/>
       </div>
     )
   }
@@ -188,6 +193,6 @@ export default App
 
 function CheckData(props) {
   if(props.display) {
-    return <CardDetails newData={props.newData}/>} else {return <Cards fetchNewapiData={props.fetchNewapiData} data={props.data} findRecipe={props.findRecipe}/>}
+    return <CardDetails newData={props.newData}/>} else {return <Cards  data={props.data} findRecipe={props.findRecipe}/>}
   
 }

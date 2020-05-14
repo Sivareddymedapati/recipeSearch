@@ -6,9 +6,6 @@ import cx from 'classnames'
 const Cards = (props) => {
     console.log(props.data)
 
- useEffect(() => {
-     props.fetchNewapiData()
- }, [])
     
     return (
 
