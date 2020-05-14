@@ -35,7 +35,7 @@ class SearchForm extends Component{
             </div>
             <div className="grid-12">
             <form className="form" onSubmit={this.props.fetchapiData}>
-                <input type="text" className="forminput grid-10" value={this.props.itemSearch} name="itemSearch" onChange={this.props.handleInputChange}/>
+                <input type="text" className="forminput grid-10" placeholder="Search your favourite recipe..Eg: search fish " value={this.props.itemSearch} name="itemSearch" onChange={this.props.handleInputChange}/>
                 <button type="submit" onSubmit={this.props.fetchapiData} className="searchBtn"><i class="fa fa-search" aria-hidden="true"  type="button" /></button>
                         
             </form>
